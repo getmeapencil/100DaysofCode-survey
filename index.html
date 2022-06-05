@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center">
+        <h1 id="title">#100DaysofCode Challenge Form</h1>
+        <p id="description">
+          <em>Take part in GECR #100DaysofCode challenge by filling this form</em>
+        </p>
+      </header>
+
+      <form id="survey-form" class="form-label" action="#">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" class="form-control" type="text" placeholder="Enter your name" required="required">
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" class="form-control" type="email" placeholder="Enter your email" required="required">
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input id="number" class="form-control" type="number" min="10" max="130" placeholder="Enter your age">
+        </div>
+
+        <div class="form-group">
+          <label for="dropdown">Year</label>
+          <select id="dropdown" class="form-control" required="required">
+            <option disabled="disabled">Select your year of college</option>
+            <option value="1st year">1st year</option>
+            <option value="2nd year">2nd year</option>
+            <option value="3rd year">3rd year</option>
+            <option value="4th year">4th year</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Will you like to participate in #100DaysofCode challenge?</p>
+          <p>
+            <label>
+              <input id="yes" type="radio" name="consent" value="Yes" checked="checked">
+              Yes
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="no" type="radio" name="consent" value="No">
+              No
+            </label>
+          </p>
+        </div>
+
+        <div class="form-group">
+          <p>What are your interests?</p>
+          <p>
+            <label>
+              <input type="checkbox" name="checkbox" value="Web Development">
+              Web Development
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="checkbox" value="Android/iOS Development">
+              Android/iOS Development
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="checkbox" value="Data Science">
+              Data Science
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="checkbox" value="Machine Learning">
+              Machine Learning
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="checkbox" value="Competitve Programming">
+              Competitve Programming
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="checkbox" value="Dev-Ops">
+              Dev-Ops
+            </label>
+          </p>
+        </div>
+
+        <div class="form-group ">
+          <label for="comments">Any comments or Suggestions?</label>
+          <textarea id="comments" name="comments" placeholder="Comments and Suggestions"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button id="submit" type="submit" name="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
